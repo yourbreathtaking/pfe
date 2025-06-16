@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-control-container .leaflet-control {
+  z-index: 0 !important;
+}
+
+.leaflet-pane {
+  z-index: 0 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 0 !important;
+}
+/* src/index.css or src/App.css */
+
+/* General scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+/* Custom scrollbar for dark mode */
+.scrollbar-dark::-webkit-scrollbar-track {
+  background: #2d3748; /* Dark track, e.g., gray-800 */
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background-color: #4a5568; /* Darker thumb, e.g., gray-700 */
+  border: 2px solid #2d3748; /* Border matching track for visual padding */
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background-color: #616e86; /* Lighter thumb on hover, e.g., gray-600 */
+}
+
+/* Custom scrollbar for light mode */
+.scrollbar-light::-webkit-scrollbar-track {
+  background: #e2e8f0; /* Light track, e.g., gray-200 */
+}
+
+.scrollbar-light::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Lighter thumb, e.g., gray-400 */
+  border: 2px solid #e2e8f0; /* Border matching track for visual padding */
+}
+
+.scrollbar-light::-webkit-scrollbar-thumb:hover {
+  background-color: #718096; /* Darker thumb on hover, e.g., gray-500 */
+}
